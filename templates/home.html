@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<script type="text/javascript" src="static/scripts.js"></script>
+	</head>
+	<body class="loggedin">
+		<nav class="navtop">
+			<div>
+				<img class = 'logo' src="/static/logo.png">
+				<h1>Stim</h1>
+				
+			</div>
+		</nav>
+		<form class="searchbar" method="POST" action="">
+            <input type="text" name ="recherche" placeholder="Rechercher" >
+			<input type="submit" value="Rechercher">
+        </form>
+		<label>
+			<input type="checkbox">
+			<span class="menu"> <span class="hamburger"></span> </span>
+			<ul>
+				<li> <a href="{{ url_for('home') }}">Home</a> </li>
+				<li> <a href="{{ url_for('profile') }}">Profile</a> </li>
+				<li> <a href="{{ url_for('logout') }}">Logout</a> </li>
+				<li> <a href="#">Panier</a> </li>
+				<li> <a href="#">About</a> </li>
+			</ul>
+			</label>
+            <div class = 'content'>
+                <p>Welcome back, {{ username }}! {{ msg }}</p>
+            </div>
+			<figure class="snip1573">
+				<img src ="/static/gta.jpg" alt="sample89" />
+				<figcaption>
+				  <h3>Buy Now</h3>
+				</figcaption>
+				<a href="#"></a>
+			  </figure>
+			  <figure class="snip1574">
+				<img class = "debug" src ="/static/minecraft.jpeg" alt="sample89" />
+				<figcaption>
+				  <h3>Buy Now</h3>
+				</figcaption>
+				<a href="#"></a>
+			  </figure>
+			  <figure class="snip1575">
+				<img src ="/static/valorante.jpeg" alt="sample89" />
+				<figcaption>
+				  <h3>Buy Now</h3>
+				</figcaption>
+				<a href="#"></a>
+			  </figure>
+			  <figure class="snip1576">
+				<img src ="/static/r6.jpeg" alt="sample89" />
+				<figcaption>
+				  <h3>Buy Now</h3>
+				</figcaption>
+				<a href="#"></a>
+			  </figure>
+			  <figure class="snip1577">
+				<img src ="/static/csgo.jpeg" alt="sample89" />
+				<figcaption>
+				  <h3>Buy Now</h3>
+				</figcaption>
+				<a href="#"></a>
+			  </figure>
+			  <figure class="snip1578">
+				<img src ="/static/elden.jpg" alt="sample89" />
+				<figcaption>
+				  <h3>Buy Now</h3>
+				</figcaption>
+				<a href="#"></a>
+			  </figure>
+	</body>
+	</div>
+</html>
+

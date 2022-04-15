@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Panel Administrator</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+	</head>
+	<body class="loggedin">
+        <form action="{{ url_for('admin') }}" method="post" autocomplete="off">
+
+
+		<nav class="navtop">
+
+			<div>
+
+				<img class = 'logo' src="/static/logo.png">
+				<h1>Stim</h1>
+			</div>
+		</nav>
+		<label>
+			<input type="checkbox">
+			<span class="menu"> <span class="hamburger"></span> </span>
+			<ul>
+				<li> <a href="{{ url_for('home') }}">Home</a> </li>
+				<li> <a href="{{ url_for('profile') }}">Profile</a> </li>
+				<li> <a href="{{ url_for('logout') }}">Logout</a> </li>
+				<li> <a href="#">Panier</a> </li>
+				<li> <a href="#">About</a> </li>
+			</ul>
+			</label>
+            <div class = 'content'>
+                <h2 class = "prof">Panel administrator</h2>
+            <div>
+                <p>Veuillez ajouter votre jeu : </p>
+                <table>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="text" name="nomj" placeholder="nom du jeu" id="nom_j" class = "i1"required>
+
+                    <input type="text" name="description" placeholder="description" id="descriptionjeu" class = "i2" required>
+
+                    <input type="text" name="createur" placeholder="createur" id="createurjeu" class = "i3"required>
+
+                    <input type="texte" name="prix" placeholder="prix" id="prixjeu" class = "i4" required>
+
+                    <input type="texte" name="datedesortie" placeholder="date de sortie" id="datejeu" class = "i5" required>
+
+                    <div class="msg">{{ msg }}</div>
+                    <input type="submit" value="entré dans la base de donnée" class = "button2">
+                </table>
+            </div>
+            </div>
+	</body>
+	</div>
+</html>
+
+
