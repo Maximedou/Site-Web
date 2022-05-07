@@ -5,13 +5,12 @@
 		<title>Accueil</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-		<script type="text/javascript" src="static/scripts.js"></script>
+
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<img class = 'logo' src="/static/logo.png">
-				<h1 lass="nomsite">Stim</h1>
+				<h1 class="nomsite">Stim</h1>
 				<p class="message"> Veuillez vous connecter pour accèder au site </p>
 			</div>
 		</nav>
@@ -22,8 +21,7 @@
 			  <li> <a href="{{ url_for('home') }}">Home</a> </li>
 			  <li> <a href="{{ url_for('profile') }}">Profile</a> </li>
 			  <li> <a href="{{ url_for('connexion') }}">Connexion</a> </li>
-              <li> <a href="#">Panier</a> </li>
-              <li> <a href="#">About</a> </li>
+              <li> <a href="{{ url_for('connexion') }}">Panier</a> </li>
 			</ul>
 			</label>
 			<h1 class = "titre"> Voici une liste des jeux-vidéos du moment : </h1>

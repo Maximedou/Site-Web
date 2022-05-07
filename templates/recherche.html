@@ -5,7 +5,6 @@
 		<title>Profile</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-		<script type="text/javascript" src="static/scripts.js"></script>
 	</head>
 	<body class="loggedin">
 
@@ -25,8 +24,8 @@
 				<li> <a href="{{ url_for('home') }}">Home</a> </li>
 				<li> <a href="{{ url_for('profile') }}">Profile</a> </li>
 				<li> <a href="{{ url_for('logout') }}">Logout</a> </li>
-				<li> <a href="#">Panier</a> </li>
-				<li> <a href="#">About</a> </li>
+				<li> <a href="{{ url_for('panier') }}">Panier</a> </li>
+
 			</ul>
 			</label>
             <div class = 'content'>

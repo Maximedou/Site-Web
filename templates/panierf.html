@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Profile</title>
+		<title>Panier final</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
@@ -24,35 +24,22 @@
 				<li> <a href="{{ url_for('home') }}">Home</a> </li>
 				<li> <a href="{{ url_for('profile') }}">Profile</a> </li>
 				<li> <a href="{{ url_for('logout') }}">Logout</a> </li>
-				<li> <a href="{{ url_for('panier') }}">Panier</a> </li>
-
+				<li> <a href="#">Panier</a> </li>
+				<li> <a href="#">About</a> </li>
 			</ul>
 			</label>
             <div class = 'content'>
-                <h2 class = "prof">Profile Page</h2>
+                <h2 class = "prof">Panier final</h2>
             <div>
-                <p>Les détails de votre account :</p>
+                <p>Les détails de votre panier :</p>
                 <table>
                     <tr>
-                    <td>Username:</td>
-                    <td>{{ account[1] }}</td>
+                    <td>Nom du jeu :</td>
+                    <td>{{ result }}</td>
                     </tr>
-                    <tr>
-                    <td>Password:</td>
-                    <td>{{ account[2] }}</td>
-                    </tr>
-                    <tr>
-                    <td>Email:</td>
-                    <td>{{ account[3] }}</td>
-                    </tr>
-                </table> 
-
-                <p class ='test'> {{msg}} </p> 
+                </table>
             </div>
             </div>
-			<form action="{{ url_for('admin') }}">
-				<input type="submit" value="Panel Administrator" class = button />
-			</form>
 	</body>
 	</div>
 </html>

@@ -18,6 +18,7 @@ body {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 100px auto;
 
+
 }
 
 @keyframes backg{
@@ -414,6 +415,8 @@ img.picturem {
     top: 15px;
     padding:15px;
     border-radius: 10px;
+    z-index: 1;
+
 
 }
 
@@ -446,38 +449,47 @@ input.button {
 input.i1 {
     position: absolute;
     top: 300px;
+    width: 950px;
+    text-align: center;
 }
 
 input.i2 {
     position: absolute;
-    top: 350px
+    top: 350px;
+    width: 950px;
+    text-align: center;
 }
 
 input.i3 {
     position: absolute;
-    top: 400px
+    top: 400px;
+    width: 950px;
+    text-align: center;
 }
 
 input.i4 {
     position: absolute;
-    top: 450px
+    top: 450px;
+    width: 950px;
+    text-align: center;
 }
 
 input.i5 {
     position: absolute;
-    top: 500px
+    top: 500px;
+    width: 950px;
+    text-align: center;
 }
 
 input.button2 {
     position: absolute;
     top: 650px;
     text-align: center;
-    left: 700px;
+    left:650px;
     height: 50px;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
     color: initial;
 }
@@ -564,6 +576,9 @@ input.button2 {
   padding: 5px 10px;
   text-transform: uppercase;
 }
+
+
+
 
 .snip1573 a {
   position: absolute;
@@ -1175,3 +1190,4 @@ input.button2 {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
+
